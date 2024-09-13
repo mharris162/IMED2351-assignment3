@@ -5,8 +5,23 @@
 </head>
 
 <body>
-    <p> Hi World</p>
-    <script src="./app.js"></script>
-</body>
+    <p> Hello World</p>
+    <script src="./app.js"></script>  
 
+    <p id="demo"></p>
+
+<script>
+// Create an Object
+const pet = {
+  name: "Louis",
+  age: 9,
+  color: "Tuxedo"
+};
+
+// Display Properties
+document.getElementById("demo").innerHTML = pet.name + ", " + pet.age + ", " + pet.color;
+</script>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML =pet.name">Click Me!</button>
+</body>
 </html>
