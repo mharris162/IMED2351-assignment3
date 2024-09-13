@@ -5,23 +5,29 @@
 </head>
 
 <body>
-    <p> Hello World</p>
+    <p> I have a cat named...</p>
     <script src="./app.js"></script>  
 
     <p id="demo"></p>
 
 <script>
-// Create an Object
+// Object
 const pet = {
+// object properties
   name: "Louis",
   age: 9,
-  color: "Tuxedo"
+  color: "Tuxedo",
+  ownerLastName: "Harris",
+//method
+    fullName: function (){
+    return this.name + " " + this.ownerLastName;
+}
 };
 
 // Display Properties
-document.getElementById("demo").innerHTML = pet.name + ", " + pet.age + ", " + pet.color;
+//document.getElementById("demo").innerHTML = pet.name + ", " + pet.age + ", " + pet.color;
 </script>
 
-<button type="button" onclick="document.getElementById('demo').innerHTML =pet.name">Click Me!</button>
+<button type="button" onclick="document.getElementById('demo').innerHTML = (pet.fullName)">Click Here to Reveal My Cat's Name!</button>
 </body>
 </html>
