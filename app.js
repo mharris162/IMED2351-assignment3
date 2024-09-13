@@ -1,4 +1,4 @@
-const name = "MacKenzie H"; // global scope; can be access outside of function
+const name = "mackenzie"; // global scope; can be access outside of function
 
 function logger() {   
     console.log(name);
@@ -12,8 +12,16 @@ function logger() {
 logger();
 
 
-function adder (num1, num2,) {
+function adder (num1, num2) {
     console.log(num1 + num2);
 }
 
-adder(4+4);
+adder(4,4);
+
+
+function toUpper(text) {
+    const upperCased = text.toUpperCase();
+    console.log(upperCased);
+}
+
+toUpper(name);
